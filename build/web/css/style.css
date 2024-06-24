@@ -212,12 +212,15 @@ button {
 /* banner bg main start */
 
 .banner_bg_main {
-    width: 100%;
-    float: left;
-    background-image: url(../images/back.png);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
+            position: relative;
+            width: 100%;
+            height: 600px; /* Adjust height as needed */
+            overflow: hidden;
+           float: left;
+           background-image: url(../images/back.png);
+          height: auto;
+          background-size: 100%;
+          background-repeat: no-repeat;
 }
 <!--banner-bg-->
 
@@ -234,34 +237,46 @@ button {
     height: auto;
     padding: 10px 0px;
 }
+     /* Custom CSS for menu */
+        .custom_menu {
+            margin-top: 15px; /* Adjust spacing from top */
+            text-align: right; /* Align menu items to the right */
+        }
 
-.custom_menu {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
+        .custom_menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.custom_menu ul {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-}
+        .custom_menu ul li {
+            display: inline-block;
+            margin-right: 20px; /* Adjust spacing between menu items */
+        }
 
-.custom_menu li {
-    float: left;
-    font-size: 16px;
-    color: #f1f1f1;
-    padding: 6px 10px 0px 10px;
-}
+        .custom_menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px; /* Padding around menu items */
+            border-radius: 5px; /* Rounded corners */
+            transition: all 0.3s ease; /* Smooth hover effect transition */
+        }
 
-.custom_menu li a {
-    color: #f1f1f1;
-}
+        .custom_menu ul li a:hover {
+            background-color: #f26522; /* Background color on hover */
+            color: #fff; /* Text color on hover */
+        }
 
-.custom_menu li a:hover {
-    color: #f26522;
-}
-
+        /* Additional styles for responsive design */
+        @media (max-width: 768px) {
+            .custom_menu ul li {
+                display: block;
+                margin-bottom: 10px; /* Adjust spacing for smaller screens */
+                text-align: center; /* Center align menu items */
+            }
+        }
 
 /* header top section end */
 
